@@ -1,7 +1,17 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+<h1>Hangman</h1>
+<p>Welcome to hangman! In this game, you will have to guess letters in order to guess a word or phrase! Make sure to be wise with your guesses, though, because you only have a certain number of tries! Don't let the hangman become fully drawn before you finish guessing.</p><br>
+<section>
+  <!--Buttons to pick categories - run a js function when clicked-->
+  <pick>Pick a category! </pick><button type="button" onclick="consoleFood()">Food</button> <button type="button" onclick="consoleAnimal()">Animals</button> <button type="button" onclick="consoleMovie()">Movies</button> <button type="button" onclick="consoleCountry()">Countries</button>
+</section>
+<!-- AI and W3Schools-->
+<div class="grid-container">
+  <div class="grid-item">
+    
+    <h2>Play Now!</h2>
+    <label for="letter">Guess a letter:</label>
+    <!--Submit Button - runs a function to add that letter to an arrat of letters and decide if its correct or incorrect-->
+    <input type="text" id="letter" name="letter" placeholder="Guess a letter">
+    <input type="submit" value="Submit" onclick="guessLetter()">
+
+    <canvas id="canvas-1"></canvas>
